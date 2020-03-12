@@ -16,6 +16,7 @@
 # limitations under the License.
 #
 
+<<<<<<< HEAD
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.google.clientidbase=android-google
@@ -31,6 +32,11 @@ else
 # Enable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
+=======
+# ART
+# Optimize everything for preopt
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+>>>>>>> 01f40a7d (config: optimize everything on preopt)
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -91,11 +97,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
-
-# Dex preopt
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI \
-    TrebuchetQuickStep
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/swift/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/swift/overlay/common
