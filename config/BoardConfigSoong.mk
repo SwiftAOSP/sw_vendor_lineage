@@ -95,3 +95,7 @@ SOONG_CONFIG_swiftQcomVars_qcom_display_headers_namespace := vendor/qcom/opensou
 else
 SOONG_CONFIG_swiftQcomVars_qcom_display_headers_namespace := $(QCOM_SOONG_NAMESPACE)/display
 endif
+
+ifneq ($(TARGET_USE_QTI_BT_STACK),true)
+PRODUCT_SOONG_NAMESPACES += packages/apps/Bluetooth
+endif #TARGET_USE_QTI_BT_STACK
