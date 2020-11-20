@@ -113,5 +113,8 @@ include vendor/swift/config/aosp_audio.mk
 # Include Swiftify
 include vendor/swiftify/configs/common.mk
 
+# Include swift packages
+include vendor/swift/config/packages.mk
+
 # Include Version
 include vendor/swift/config/version.mk
