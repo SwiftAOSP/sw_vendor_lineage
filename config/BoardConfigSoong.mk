@@ -66,6 +66,7 @@ SOONG_CONFIG_swiftQcomVars += \
 ifneq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
 SOONG_CONFIG_swiftQcomVars += \
     qcom_display_headers_namespace
+endif
 
 # Soong bool variables
 SOONG_CONFIG_swiftGlobalVars_camera_needs_client_info := $(TARGET_CAMERA_NEEDS_CLIENT_INFO)
