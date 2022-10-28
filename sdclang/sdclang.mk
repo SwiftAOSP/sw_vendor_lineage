@@ -12,4 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-SDCLANG_LTO_DEFS := vendor/xdroid/sdclang/sdllvm-lto-defs.mk
+SDCLANG_LTO_DEFS := vendor/swift/sdclang/sdllvm-lto-defs.mk

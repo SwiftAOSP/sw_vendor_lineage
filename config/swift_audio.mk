@@ -1,5 +1,5 @@
 #
-# Xdroid Audio Files
+# swift Audio Files
 #
 
 ALARM_PATH := vendor/swift/prebuilt/common/media/audio/alarms

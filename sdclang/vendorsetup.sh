@@ -1,2 +1,2 @@
 # SDClang Environment Variables
-export SDCLANG_CONFIG=$(pwd)/vendor/xdroid/sdclang/sdclang.json
+export SDCLANG_CONFIG=$(pwd)/vendor/swift/sdclang/sdclang.json

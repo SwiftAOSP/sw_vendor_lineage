@@ -53,7 +53,7 @@ cc_library_headers {
 soong_config_module_type {
     name: "disable_postrender_cleanup",
     module_type: "cc_defaults",
-    config_namespace: "xdroidGlobalVars",
+    config_namespace: "swiftGlobalVars",
     bool_variables: ["disable_postrender_cleanup"],
     properties: ["cppflags"],
 }
@@ -193,7 +193,7 @@ needs_netd_direct_connect_rule {
 soong_config_module_type {
     name: "legacy_hw_disk_encryption",
     module_type: "cc_defaults",
-    config_namespace: "xdroidQcomVars",
+    config_namespace: "swiftQcomVars",
     bool_variables: ["legacy_hw_disk_encryption"],
     properties: ["cppflags"],
 }
