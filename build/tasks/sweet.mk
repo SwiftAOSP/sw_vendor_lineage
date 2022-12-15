@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-SWIFT_TARGET_PACKAGE := $(PRODUCT_OUT)/$(SWIFT_BUILD_VERSION).zip
+SWIFT_TARGET_PACKAGE := $(PRODUCT_OUT)/SwiftAOSP-$(SWIFT_BUILD_VERSION).zip
 MD5 := prebuilts/build-tools/path/$(HOST_OS)-x86/md5sum
 
 .PHONY: sweet
@@ -22,7 +22,6 @@ sweet: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) mv $(INTERNAL_OTA_PACKAGE_TARGET) $(SWIFT_TARGET_PACKAGE)
 	$(hide) $(MD5) $(SWIFT_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(SWIFT_TARGET_PACKAGE).md5sum
 	@echo "Done"
-	@echo -e "\t ============================ SwiftAOSP ============================"
-	@echo -e "\t File: $(SWIFT_TARGET_PACKAGE)"
-	@echo -e "\t MD5: `cat $(SWIFT_TARGET_PACKAGE).md5sum | awk '{print $$1}' `"
-	@echo -e "\t ==========================  Good Luck! ============================"
+	@echo -e "File: $(SWIFT_TARGET_PACKAGE)"
+	@echo -e "MD5: `cat $(SWIFT_TARGET_PACKAGE).md5sum | awk '{print $$1}' `"
+	@echo -e "============================ SwiftAOSP ============================"
