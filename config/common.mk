@@ -124,16 +124,13 @@ $(foreach f,$(wildcard vendor/swift/prebuilt/etc/init/*.rc),\
 include vendor/swift/sdclang/sdclang.mk
 endif
 
-# Include AOSP audio files
-include vendor/swift/config/aosp_audio.mk
+# Include Sweetea
+include vendor/sweetea/configs/common.mk
 
-# Include Swiftify
-include vendor/swiftify/configs/common.mk
-
-# Include swift packages
+# Include Swift packages
 include vendor/swift/config/packages.mk
 
-# Include common props
+# Include Common props
 include vendor/swift/config/props.mk
 
 # Include Version
